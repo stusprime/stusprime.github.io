@@ -1,0 +1,98 @@
+@import url(reset.css);
+
+:root{
+    --font: #17152e;
+    
+}
+
+body{
+  
+ 
+    background-image:url(bg.jpg), linear-gradient( 109.6deg,  rgba(45, 115, 213, 0.521) 11.2%, rgba(121, 138, 212, 0.808) 91.2% );
+    font: optional;
+    background-size: cover ;
+    background-blend-mode: color;
+}
+
+main{
+    border-radius: 1rem;
+   
+    padding: 40px;
+    position: relative;
+}
+
+main::before{
+    position: absolute;
+    content: "St'us";
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    height: 60%;
+   
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: -30%;
+    color: antiquewhite;
+    text-transform: uppercase;
+    left: -100px;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.29);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+
+    
+}
+
+a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: var(--font);
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+ul li {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.603);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(7px);
+    
+    border-radius: 8px;
+}
+
+ul li:nth-of-type(1) h2{
+    color: #fc886e;
+}
+
+ul li:nth-of-type(2) h2{
+    color: #aa6d4d;
+}
+
+ul li:nth-of-type(3) h2{
+    color: #eea756;
+}
+
+ul li:nth-of-type(4) h2{
+    color: #5fc556;
+}
+
+ul li:nth-of-type(5) h2{
+    color: #c556c0;
+}
+
+ul li:nth-of-type(6) h2{
+    color: #c5b456;
+}
+
+ul li:nth-of-type(7) h2{
+    color: #141561;
+}
