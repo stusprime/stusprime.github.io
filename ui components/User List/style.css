@@ -1,0 +1,107 @@
+@import url(../reset.css);
+
+:root{
+    --bg:#E2E9F9;
+    --font-800:#373C47;
+    --font-500: #87A0CE;
+
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--font-800);
+}
+
+main{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px 0 #8484A4;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.spaced{
+    justify-content: space-between;
+}
+
+header{
+    margin-top: 20px;
+}
+
+.search{
+    padding: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+}
+
+
+.search input{
+    border: 0;
+    appearance: none;
+    outline: 0;
+    padding-left: 5px;
+    font: inherit;
+}
+
+
+.cat li{
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-weight: 600;
+    
+}
+
+.cat li.active{
+    color: white;
+    background-color: #87A0CE;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    margin-top: 40px;
+}
+
+
+.card{
+    padding: 1rem;
+   border-radius: 5px;
+    background-color:#E2E9F9;
+    gap:5px;
+    
+}
+
+.card:hover{
+    box-shadow: 2px 2px 2px 0 #8484a4af;
+}
+
+.card img{ 
+    border-radius:50%;
+}
+
+.card > *{
+    align-self: flex-start;
+ 
+}
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    margin-top: 8px;
+}
+
+.card ul li{
+    padding: 3px;
+    border: 1px solid gainsboro;
+    border-radius: 100vh;
+}

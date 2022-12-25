@@ -1,0 +1,183 @@
+@import url(../reset.css);
+
+:root{
+    --bg:#F1F1FB;
+    --font:#393A62;
+    --sbg:#EA4C3C;
+    
+}
+
+body{
+        background: var(--bg);
+        color: var(--font)
+}
+
+
+main{
+    grid-template-columns: 200px 1fr;
+    position: relative;
+    box-shadow: 0 5px  20px 0px  rgba(1, 9, 37, 0.623);
+    background-color: white;
+    border-radius: 1rem;
+   max-width: 1200px;
+    flex:1;
+}
+
+aside{
+    background-color: gainsboro;
+    padding: 40px 15px 0px ;
+    border-radius: 1rem 0 0 1rem;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #F1F1FB;
+    gap: 10px;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+.profile > div *{
+    margin: 0;
+}
+
+.menu{
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+table a{
+    color: #EA4C3C;
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 1.1rem;
+    border-left: 5px solid transparent;
+    padding: 5px;
+    color: #616177;
+}
+
+.info p{
+    color: #616177;
+}
+
+.menu li:nth-of-type(6){
+   margin-top: auto;
+}
+
+
+.content{
+    padding: 40px;
+    display: flex;
+}
+
+.info{
+    flex: 3;
+}
+
+.info >*{
+    width: 100%;
+}
+
+
+
+table td:not(td:last-child){
+    padding-top: 1rem;
+    padding-right: 4rem;
+}
+
+table th{
+    text-align: left;
+}
+
+table tfoot td{
+    padding-top: 20px;
+}
+
+.pay{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.pay li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+   
+    
+}
+
+.pay li button{
+    margin-left: auto;
+}
+
+.sub{
+    margin-top: 80px;
+    margin-left: 40px;
+    background-color: var(--sbg);
+    align-self: flex-start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #F1F1FB;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.headings{
+    margin-top: 40px;
+}
+
+.leading{
+    margin-top: 30px;
+}
+
+button{
+    
+    cursor: pointer;
+}
+
+.padding{
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+}
+
+li.active{
+    border-left-color: #EA4C3C;
+    color: var(--font);
+   
+}
+
+
+main::before{
+    position: absolute;
+    background-color: #EA4C3C;
+    content: "";
+    height: calc(100% + 30px) ;
+    width: 200px;
+    top: -15px;
+    border-radius: 1rem;
+    z-index: -1;
+    left: -40px;
+}
