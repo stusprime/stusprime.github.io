@@ -1,0 +1,74 @@
+@import url(../reset.css);
+
+:root{
+    --bg:#F3F3FB;
+    --font-800:#2F3E6A;
+    --font-500:#8994AC;
+}
+
+body{
+
+    background-color: var(--bg);
+    color: var(--font-800);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.spaced{
+    justify-content: space-between;
+}
+
+main{
+    background-color: white;
+    padding:  40px 2rem;
+    width: 250px;
+    border-radius:  2rem;
+    box-shadow: 0px 10px 20px 0 #8484A4;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+   border-radius: 50%;
+   padding: 6px;
+   outline: 1px solid #2F3E6A;
+   outline-offset: 2px;
+   color: inherit;
+   margin-right: .5rem;
+}
+
+input[type="checkbox"]:checked{
+    background-color: currentColor;
+}
+
+button{
+    margin-left: auto;
+    display: flex;
+    padding: 8px;
+    background-color: #2F3E6A;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+
+
+label:has(input[disabled]){
+    color: #8994AC;
+}
