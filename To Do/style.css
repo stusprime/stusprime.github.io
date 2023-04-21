@@ -17,6 +17,14 @@ body{
     align-items: center;
 }
 
+.input-group input{
+    width: 80%;
+    border: 1px solid rgb(224, 220, 245);
+}
+.input-group{
+    gap: 10px;
+   
+}
 
 .spaced{
     justify-content: space-between;
@@ -45,7 +53,6 @@ input[type="checkbox"]:checked{
 }
 
 button{
-    margin-left: auto;
     display: flex;
     padding: 8px;
     background-color: #2F3E6A;

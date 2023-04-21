@@ -16,24 +16,14 @@
             <i class='bx bx-dots-horizontal-rounded'></i>
         </header>
 
-        <p>Shared with 1 person</p>
+        <p>Task (<span id="task-count">0</span>)</p>
 
-        <ul>
-           <li>
-             <label for=""> <input type="checkbox" name="" id=""> Eggs</label>
-           </li>
-
-           <li>
-            <label for=""> <input type="checkbox" name="" id=""> Tomatoes</label>
-          </li>
-
-          <li>
-            <label for=""> <input type="checkbox" name="" id=""> Avacado</label>
-          </li>
+        <ul id="todo">
+         
         </ul>
 
-        <p>Completed (4)</p>
-        <ul>
+        <p>Completed (<span>4</span>)</p>
+        <ul id="completed">
             <li>
                 <label for=""> <input type="checkbox" checked disabled name="" id=""> Apples</label>
               </li>
@@ -51,11 +41,14 @@
            </li>
          </ul>
 
-         <div>
-            <button><i class='bx bx-plus' ></i></button>
+         <div class="input-group flex">
+          <input id="input" type="text">
+            <button id="add"><i class='bx bx-plus' ></i></button>
          </div>
 
 
     </main>
+
+    <script src="done.js"></script>
 </body>
 </html>
